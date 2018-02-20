@@ -1,0 +1,29 @@
+.slick-next {
+    right: 15px;
+    width: 35px;
+    &:before {
+        content: "";
+        background: url('../images/left_arrow.png') no-repeat;
+        width: 35px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.slick-prev {
+    left: 8px;
+    width: 35px;
+    z-index: 30;
+    transform: rotate(180deg);
+    &:before {
+        content: "";
+        background: url('../images/left_arrow.png') no-repeat;
+        width: 35px;
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}

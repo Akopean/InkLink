@@ -1,0 +1,252 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+// Variables
+@import "custom";
+
+@import "font-awesome.min.css";
+
+//Slick Slider
+@import "bower_components/slick-carousel/slick/slick.scss";
+@import "bower_components/slick-carousel/slick/slick-theme.scss";
+
+// Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.img-thumbnail {
+    @extend .img-thumbnail;
+    border: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+body {
+	font-family: 'Open Sans', "Helvetica Neue", Arial, sans-serif;
+	color: #5c5c5b;
+}
+
+.hidden {
+    display: none !important;
+}
+
+// Custom Slick Slider styles
+@import "slick-slider";
+
+// Custom Widget styles
+@import "widget";
+
+// Custom Site styles
+@import "site";
+
+// Custom Entry styles
+@import "entry";
+
+.lk-logo__banner {
+    margin: 131px 0 45px;
+    font-weight: 700;
+    font-family: 'Elephant-regular', 'Raleway';
+    text-transform: uppercase;
+    font-size: 65px;
+    color: #000;
+    letter-spacing: 17px;
+}
+
+.after-header__slider {
+	margin-top: 85px;
+	height: 600px;
+	.slick-slide{
+		position: relative;
+	}
+	.slide-info {
+		position: absolute;
+		width: 410px;
+	    height: 410px;
+	    background-color: white;
+	    padding: 35px 65px;
+	    left: calc(50% - 205px);
+	    top: calc(50% - 205px);
+	    .entry-title {
+	    	margin: 30px 0;
+	    	font-size: 27px;
+	    }
+	    .category-links a {
+		    text-transform: none;
+		}
+		.continue-reading .more-link{
+			&:hover {
+		    -webkit-box-shadow: none;
+		    box-shadow: none;
+			}
+			&:active {
+		    background-color: #ffaa1c;
+		    color: #282828;
+			}
+		}
+	}
+}
+
+.read-more{
+    color: #f76c6c;
+    font-style: normal;
+}
+
+.navbar-toggleable-md .navbar-nav .nav-link {
+		@media (min-width: 992px) {
+	    padding-right: 2rem;
+	    padding-left: 2rem;
+	}
+}
+
+a {
+    color: #282828;
+    text-decoration: none;
+    &:focus, &:hover {
+    	color: lighten( #282828, 30% );
+    	text-decoration: none;
+	}
+}
+
+.category-links {
+	font-size: 14px;
+	color: #F3B227;
+	a {
+		color: #F3B227;
+		text-decoration: underline;
+		text-transform: uppercase;
+		&:hover {
+			color: lighten( #F3B227, 20% );
+		}
+	}
+}
+
+.continue-reading{
+	margin: 15px 0;
+	text-align: center;
+	.more-link{
+		@extend %custom-btn;
+	}
+}
+
+.navigation {
+	font-size: 16px;
+	position: relative;
+	border-bottom: 1px solid;
+	padding-bottom: 15px;
+	margin-bottom: 100px;
+	.nav-previous {
+		width: 50%;
+		float: left;
+		text-align: left;
+		& > a {
+			:after {
+				content: "<";
+				position: absolute;
+				left: 0;
+			}
+		}
+		& span {
+			padding-left: 25px;
+		}
+	}
+    .nav-next {
+    	position: relative;
+		width: 50%;
+		float: right;
+		text-align: right;
+		& > a {
+			:after {
+				content: ">";
+				position: absolute;
+				right: 0;
+			}
+		}
+		& span {
+			padding-right: 25px;
+		}
+	}
+}
+
+
+.after-content-banner {
+	.entry-title {
+		font-size: 22px;
+	}
+	.entry-footer {
+		border: none;
+	}
+    .posted-on {
+    	float: right;
+    }
+}
+
+.upper {
+	position: absolute;
+    bottom: 100px;
+    right: 0;
+    border: 1px solid;
+    border-left: 2px solid;
+    padding: 20px;
+    border-top: 2px solid;
+}
+
+.site-footer {
+	.r-reserve {
+		margin: 50px;
+		text-align: right;
+	}
+}
+.footer-slick__slider {
+	position: relative;
+	width: 100%;
+	height: 325px;
+	.slick-track {
+		&:hover {
+			.slick-slide a {
+				display: block;
+				position: relative;
+				&:not(:hover) {
+					&:before {
+						position: absolute;
+						content: "";
+						width: 100%;
+						height: 100%;
+						background: rgba(240, 255, 255, 0.5);
+						z-index: 5;
+					}
+				}
+				/*&:hover {
+					&:after {
+						z-index: 5;
+						position: absolute;
+						width: 100%;
+						margin: 160px 0;
+						text-transform: uppercase;
+						content: "Follow us on instagram"; //todoo
+						text-align: center;
+						top: 0;
+						color: #FFF;
+						-webkit-user-select: none;
+					   	-moz-user-select: none;
+					   	-ms-user-select: none;
+					   	user-select: none;
+					}
+				}*/
+			}
+		}
+	}
+	.slick-slide {
+		a span {
+			position: absolute;
+			text-transform: uppercase;
+			text-align: center;
+			color: #FFF;
+			top: 0;
+			width: 100%;
+			margin: 160px 0;
+			display: none;
+		}
+		a:hover span {
+			display: inline;
+		}
+	}
+}

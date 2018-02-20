@@ -1,0 +1,24 @@
+{
+  "name": "Goog1e",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Goog1e"
+  ],
+  "license": "MIT License",
+  "keywords": [
+    "gulp"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.8.1"
+  }
+}

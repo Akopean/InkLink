@@ -1,0 +1,82 @@
+.widget {
+    margin-bottom: 35px;
+    .widget-title {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 1px solid #f3b227;
+        padding: 16px 1px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .widget-content {
+        &>p {
+            text-align: center;
+            font-size: 12px;
+            text-indent: 5px;
+        }
+    }
+    .widget-content.follow-me ul {
+        list-style: none;
+        padding-left: 0;
+        margin: 25px 0;
+        li {
+            padding: 0 5px;
+            display: inline;
+        }
+    }
+    .widget-content.pinterest {
+        width: 100%;
+        ul {
+            list-style: none;
+            padding-left: 0;
+            width: 100%;
+            font-size: 0;
+            li {
+                display: inline-block;
+                width: 30%;
+                margin: 4px;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .widget-content.latest-post {
+        h5 {
+            font-size: 13px;
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+        img {
+            float: left;
+            margin-right: 18px;
+        }
+        .posted-on {
+            font-size: 11px;
+            font-style: italic;
+        }
+        ul {
+            @extend %custom-ul;
+            li {
+                width: 100%;
+                display: inline-block;
+                padding: 18px 0;
+                border-bottom: 1px solid #ccc5c5;
+            }
+        }
+    }
+    .widget-content.tags {
+        ul {
+            @extend %custom-ul;
+            li span {
+			    background-color: #e5e5e5;
+			    padding: 5px 10%;
+			    display: inline-block;
+			    margin: 4px 1px;
+			    font-size: 11px;
+			    border-radius: 20px;
+            }
+        }
+    }
+}

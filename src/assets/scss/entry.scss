@@ -1,0 +1,56 @@
+.entry-header{
+	 .entry-title {
+	    margin-top: 0.5rem;
+	}
+	.post-thumbnail {
+	}
+}
+
+.entry-meta {
+    color: #8D8D8C;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.entry-content {
+    margin-top: 25px;
+    & .post-thumbnail {
+    }
+    &>p {
+        text-align: justify;
+        margin-bottom: 2rem;
+        font-size: 14px;
+    }
+}
+
+.entry-footer {
+    color: #282828;
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+    margin-bottom: 70px;
+    .comts-count {
+        float: right;
+    }
+    .share-links {
+        &:before {
+            content: "\f067";
+            font: normal normal normal 14px/1 FontAwesome;
+            color: #7d7979;
+        }
+        &.closed {
+            &:before {
+                content: "\f068";
+            }
+        }
+        cursor: pointer;
+        &__icon {
+            padding-left: 10px;
+            list-style: none;
+            display: inline;
+            & li {
+                padding: 0 3px;
+                display: inline;
+            }
+        }
+    }
+}
