@@ -3,7 +3,7 @@
     width: 35px;
     &:before {
         content: "";
-        background: url('../images/left_arrow.png') no-repeat;
+        background: url('./images/left_arrow.png') no-repeat;
         width: 35px;
         height: 20px;
         position: absolute;
@@ -19,7 +19,7 @@
     transform: rotate(180deg);
     &:before {
         content: "";
-        background: url('../images/left_arrow.png') no-repeat;
+        background: url('./images/left_arrow.png') no-repeat;
         width: 35px;
         height: 20px;
         position: absolute;
