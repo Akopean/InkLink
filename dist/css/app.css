@@ -151,10 +151,10 @@
 
 /* Slider */
 
-.slick-loading .slick-list {
+/*.slick-loading .slick-list {
   background: #fff url(/images/vendor/slick-carousel/slick/ajax-loader.gif?68b0c4fcb84d239f261c1a5e65818142) center center no-repeat;
 }
-
+*/
 /* Icons */
 
 @font-face {
@@ -10555,7 +10555,7 @@ body {
 
 .slick-next:before {
   content: "";
-  background: url(/images/left_arrow.png?d8551a1f9be6e88d31dc5f0f5634d94f) no-repeat;
+  background: url(./images/left_arrow.png?d8551a1f9be6e88d31dc5f0f5634d94f) no-repeat;
   width: 35px;
   height: 20px;
   position: absolute;
@@ -10573,7 +10573,7 @@ body {
 
 .slick-prev:before {
   content: "";
-  background: url(/images/left_arrow.png?d8551a1f9be6e88d31dc5f0f5634d94f) no-repeat;
+  background: url(./images/left_arrow.png?d8551a1f9be6e88d31dc5f0f5634d94f) no-repeat;
   width: 35px;
   height: 20px;
   position: absolute;
