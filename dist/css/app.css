@@ -10555,7 +10555,7 @@ body {
 
 .slick-next:before {
   content: "";
-  background: url(./images/left_arrow.png?d8551a1f9be6e88d31dc5f0f5634d94f) no-repeat;
+  background: url(../../images/left_arrow.png?d8551a1f9be6e88d31dc5f0f5634d94f) no-repeat;
   width: 35px;
   height: 20px;
   position: absolute;
