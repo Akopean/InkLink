@@ -3,3 +3,9 @@
 /dist
 index.psd
 /templates
+/src
+mix-manifest.json
+package.json
+README.md
+webpack.mix.js
+bower.json
