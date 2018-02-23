@@ -1,0 +1,21 @@
+.single .site-header {
+	margin-bottom: 150px;
+}
+
+.post-additionals{
+	margin-bottom: 60px;
+	.about-photo{
+		.about-avatar{
+			border-radius: 50%;
+		}
+	}
+	.about-title{
+		font-size: 21px;
+		color: #282828;
+		margin-top: 20px;
+	}
+	.about-descr{
+		font-size: 13px;
+		color: #5c5c5c;
+	}
+}

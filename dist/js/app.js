@@ -76,25 +76,35 @@ module.exports = __webpack_require__(11);
 /***/ 11:
 /***/ (function(module, exports) {
 
-$('.after-header__slider').slick({
-    dots: false,
-    speed: 500,
-    slidesToShow: 1
-});
+$(document).ready(function () {
 
-$('.footer-slick__slider').slick({
-    dots: false,
-    speed: 500,
-    slidesToShow: 6,
-    arrows: false,
-    slidesToScroll: 2
-});
+    $('.after-header__slider').slick({
+        dots: false,
+        speed: 500,
+        slidesToShow: 1
+    });
 
-$('.share-links').on('click', function (e) {
-    var $this = $(this);
-    var $icon = $this.siblings('.share-links__icon');
-    $this.toggleClass('closed');
-    $icon.toggleClass('hidden');
+    $('.footer-slick__slider').slick({
+        dots: false,
+        speed: 500,
+        slidesToShow: 6,
+        arrows: false,
+        slidesToScroll: 2
+    });
+
+    $('.share-links').on('click', function (e) {
+        var $this = $(this);
+        var $icon = $this.siblings('.share-links__icon');
+        $this.toggleClass('closed');
+        $icon.toggleClass('hidden');
+    });
+
+    $('a[href^="#"]').click(function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 1500);
+    });
 });
 
 /***/ })

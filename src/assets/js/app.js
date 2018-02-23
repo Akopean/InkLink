@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 $('.after-header__slider').slick({
     dots: false,
     speed: 500,
@@ -17,4 +19,16 @@ $('.share-links').on('click', function(e) {
 	let $icon = $this.siblings('.share-links__icon');
 	$this.toggleClass('closed');
 	$icon.toggleClass('hidden');
+});
+
+
+$('a[href^="#"]').click(function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+});
+
+
+
 });
