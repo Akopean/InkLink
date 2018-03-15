@@ -1,5 +1,8 @@
 .single .site-header {
 	margin-bottom: 150px;
+	@media only screen and (max-width: 544px) {
+    	margin-bottom: 50px;
+    }
 }
 
 .post-additionals{

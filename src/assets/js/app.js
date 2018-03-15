@@ -12,6 +12,36 @@ $('.footer-slick__slider').slick({
     slidesToShow: 6,
     arrows: false,
     slidesToScroll: 2,
+    responsive: [
+        {
+            breakpoint: 1600,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        }
+    ],
 });
 
 $('.share-links').on('click', function(e) {
@@ -24,9 +54,11 @@ $('.share-links').on('click', function(e) {
 
 $('a[href^="#"]').click(function (event) {
     event.preventDefault();
-    var id  = $(this).attr('href'),
+    let top, id  = $(this).attr('href');
+    if(id.length > 1){
         top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top}, 1500);
+        $('body,html').animate({scrollTop: top}, 1500);
+    }
 });
 
 

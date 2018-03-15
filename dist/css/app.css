@@ -10761,6 +10761,13 @@ blockquote {
   letter-spacing: 17px;
 }
 
+@media only screen and (max-width: 544px) {
+  .lk-logo__banner {
+    margin: 45px 0 45px;
+    font-size: 32px;
+  }
+}
+
 .after-header__slider {
   margin-top: 85px;
   height: 600px;
@@ -10869,6 +10876,12 @@ blockquote {
 
 .single .site-header {
   margin-bottom: 150px;
+}
+
+@media only screen and (max-width: 544px) {
+  .single .site-header {
+    margin-bottom: 50px;
+  }
 }
 
 .post-additionals {
@@ -11087,6 +11100,12 @@ a:hover {
 
 .site-header {
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 544px) {
+  .site-header {
+    margin-bottom: 50px;
+  }
 }
 
 .site-navigation {

@@ -60,20 +60,20 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 7);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 10:
+/***/ 7:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(11);
+module.exports = __webpack_require__(8);
 
 
 /***/ }),
 
-/***/ 11:
+/***/ 8:
 /***/ (function(module, exports) {
 
 $(document).ready(function () {
@@ -89,7 +89,32 @@ $(document).ready(function () {
         speed: 500,
         slidesToShow: 6,
         arrows: false,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        responsive: [{
+            breakpoint: 1600,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 2
+            }
+        }, {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 2
+            }
+        }, {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        }]
     });
 
     $('.share-links').on('click', function (e) {
@@ -101,9 +126,12 @@ $(document).ready(function () {
 
     $('a[href^="#"]').click(function (event) {
         event.preventDefault();
-        var id = $(this).attr('href'),
+        var top = void 0,
+            id = $(this).attr('href');
+        if (id.length > 1) {
             top = $(id).offset().top;
-        $('body,html').animate({ scrollTop: top }, 1500);
+            $('body,html').animate({ scrollTop: top }, 1500);
+        }
     });
 });
 
